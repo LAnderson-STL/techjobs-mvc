@@ -35,8 +35,8 @@ public class SearchController {
             jobs = JobData.findByValue(searchTerm);
         }
 
-        //TODO fix this
-        //if search field is blank, show all jobs
+
+        //if search field is blank, default to "all"
         else if (searchType.equals("")) {
            return "search";
         }
